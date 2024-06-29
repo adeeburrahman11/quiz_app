@@ -10,12 +10,15 @@ const questions = [
       'Functions',
     ],
   ),
-  QuizQuestion('How are Flutter UIs built?', [
-    'By combining widgets in code',
-    'By combining widgets in a visual editor',
-    'By defining widgets in config files',
-    'By using XCode for iOS and Android Studio for Android',
-  ]),
+  QuizQuestion(
+    'How are Flutter UIs built?',
+    [
+      'By combining widgets in code',
+      'By combining widgets in a visual editor',
+      'By defining widgets in config files',
+      'By using XCode for iOS and Android Studio for Android',
+    ],
+  ),
   QuizQuestion(
     'What\'s the purpose of a StatefulWidget?',
     [
@@ -51,5 +54,23 @@ const questions = [
       'By calling updateUI()',
       'By calling updateState()',
     ],
-  )
+  ),
+  QuizQuestion(
+    'Which programming language is used to build Flutter applications?',
+    [
+      'Dart',
+      'Kotlin',
+      'Java',
+      'Go',
+    ],
+  ),
+  QuizQuestion(
+    'How many types of widgets are there in Flutter?',
+    [
+      '2',
+      '3',
+      '4',
+      '8+',
+    ],
+  ),
 ];
