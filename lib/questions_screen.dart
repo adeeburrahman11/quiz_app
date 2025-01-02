@@ -5,7 +5,12 @@ import 'package:quiz_app/data/questions.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class QuestoinsScreen extends StatefulWidget {
-  const QuestoinsScreen({super.key});
+  const QuestoinsScreen({
+    super.key,
+    required this.onSelectAnswer,
+  });
+
+  final void Function(String answer) onSelectAnswer;
 
   @override
   State<QuestoinsScreen> createState() {
@@ -16,7 +21,8 @@ class QuestoinsScreen extends StatefulWidget {
 class _QuestoinsScreenState extends State<QuestoinsScreen> {
   var currentQuestionIndex = 0;
 
-  void answerQuestion() {
+  void answerQuestion(String selectedAnswer) {
+    widget.onSelectAnswer(selectedAnswer);
     setState(() {
       currentQuestionIndex++;
     });
@@ -50,7 +56,9 @@ class _QuestoinsScreenState extends State<QuestoinsScreen> {
                 children: [
                   AnswerButton(
                     answerText: answer,
-                    onTap: answerQuestion,
+                    onTap: () {
+                      answerQuestion(answer);
+                    },
                   ),
                   const SizedBox(height: 10),
                 ],
