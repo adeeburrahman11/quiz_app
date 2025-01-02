@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/data/colors.dart';
 
 class AnswerButton extends StatelessWidget {
   const AnswerButton(
@@ -13,13 +14,14 @@ class AnswerButton extends StatelessWidget {
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 40),
-        backgroundColor: const Color.fromARGB(255, 50, 0, 84),
-        foregroundColor: Colors.white,
+        backgroundColor: primary,
+        foregroundColor: secondary,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       ),
       child: Text(
         answerText,
         textAlign: TextAlign.center,
+        style: const TextStyle(fontSize: 16),
       ),
     );
   }
