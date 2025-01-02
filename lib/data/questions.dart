@@ -55,22 +55,22 @@ const questions = [
       'By calling updateState()',
     ],
   ),
-  // QuizQuestion(
-  //   'Which programming language is used to build Flutter applications?',
-  //   [
-  //     'Dart',
-  //     'Kotlin',
-  //     'Java',
-  //     'Go',
-  //   ],
-  // ),
-  // QuizQuestion(
-  //   'How many types of widgets are there in Flutter?',
-  //   [
-  //     '2',
-  //     '3',
-  //     '4',
-  //     '8+',
-  //   ],
-  // ),
+  QuizQuestion(
+    'Which programming language is used to build Flutter applications?',
+    [
+      'Dart',
+      'Kotlin',
+      'Java',
+      'Go',
+    ],
+  ),
+  QuizQuestion(
+    'How many types of widgets are there in Flutter?',
+    [
+      '2',
+      '3',
+      '4',
+      '8+',
+    ],
+  ),
 ];
