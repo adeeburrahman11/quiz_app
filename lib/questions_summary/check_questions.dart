@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz_app/data/colors.dart';
 
 class CheckQuestions extends StatelessWidget {
@@ -21,7 +22,7 @@ class CheckQuestions extends StatelessWidget {
       ),
       child: Text(
         questionNumber.toString(),
-        style: const TextStyle(
+        style: GoogleFonts.lato(
           fontWeight: FontWeight.bold,
           color: primary,
         ),
