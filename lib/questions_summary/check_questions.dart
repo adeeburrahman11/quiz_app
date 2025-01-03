@@ -24,6 +24,7 @@ class CheckQuestions extends StatelessWidget {
         questionNumber.toString(),
         style: GoogleFonts.lato(
           fontWeight: FontWeight.bold,
+          fontSize: 18,
           color: primary,
         ),
       ),
