@@ -10,7 +10,7 @@ class QuestionsSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 600,
+      height: 500,
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
